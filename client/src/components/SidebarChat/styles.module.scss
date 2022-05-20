@@ -1,0 +1,19 @@
+.sidebar{
+    padding:4px;
+    background-color: red;
+    display:flex;
+    flex-direction: column;
+    &Messages{
+        flex:1;
+        max-height: 85vh;
+        overflow-y: auto;
+        background-color:green;
+        padding:5px;border-radius: 5px;
+        &Chat{
+            display:flex;
+            >strong{
+                margin-right: 0.15rem;
+            }
+        }
+    }
+}

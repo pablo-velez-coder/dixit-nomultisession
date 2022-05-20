@@ -1,0 +1,12 @@
+.pointsGrid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &Point{
+        border:1px solid black;
+        width:2rem;
+        height:2rem;
+        display:grid;
+        place-items: center;
+    }
+}

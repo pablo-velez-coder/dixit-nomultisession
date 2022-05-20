@@ -1,0 +1,14 @@
+.cards{
+    display:flex;
+    justify-content:space-between;
+    &Image{
+        >img{
+            height:400px;
+            width:300px;
+            object-fit: contain;
+            border-radius: 6px;
+            box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+    }
+}

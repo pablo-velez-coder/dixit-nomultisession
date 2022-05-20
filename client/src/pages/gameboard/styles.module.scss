@@ -1,0 +1,72 @@
+.cards{
+    display:flex;
+    .image{
+   
+        >img{
+            margin: 0 0.5rem;
+            border-radius:6px;
+            height:300px;
+            border-width:5px;
+            @media (max-width:1200px){
+                height:max-content;
+                width: 15vw;
+                background:green;
+                object-fit: contain;
+            }
+            cursor:pointer;
+            &:hover{
+                transform:scale(1.01);
+          
+            }
+        }
+    }
+}
+
+.gameContainer{
+    background-color:orange;
+    height:100vh;
+    display:flex;   
+
+}
+
+.dashboard{
+    display:grid;
+    place-items: center;
+    flex:1;
+}
+
+.selected{
+
+    border:3px solid rgb(255, 115, 0);
+}
+
+.actualRating{
+    background-color:green;
+    color:white;
+}
+.actions{
+    display:flex;
+    justify-content: center;
+    gap:3rem;
+    align-items: center;
+    width:30%;
+    >p{
+        margin-bottom: 0;
+    }
+    >button{
+        border-radius:5px;
+        border:none;
+        padding:4px 1rem;
+        background-color: rgb(255, 94, 0);
+        color:white;
+        
+    }
+}
+
+.correct{
+    border:5px solid rgb(41, 206, 41);
+}
+
+.wrong{
+    border:5px solid red;
+}
